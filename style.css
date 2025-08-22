@@ -29,7 +29,6 @@ body {
 .header img {
 	width: 400px;
 	height: auto;
-	
 }
 
 .menu ul {
@@ -188,3 +187,44 @@ body {
 	margin-left: 50px;
 }
 
+.ervaring,
+.vaardigheden {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px;
+	align-items: center;
+}
+
+.ervaring-text,
+.vaardigheden-text {
+	flex: 1;
+}
+
+.ervaring-image img,
+.vaardigheden-image img {
+	border-radius: 10px;
+}
+
+.ervaring-text ul,
+.vaardigheden-text ul {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.ervaring-text li,
+.vaardigheden-text li {
+	margin-bottom: 20px;
+}
+
+.ervaring-text h1,
+.vaardigheden-text h1 {
+	font-family: "Abril Fatface", serif;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.ervaring-image img:hover,
+.vaardigheden-image img:hover {
+	transform: scale(1);
+	transition: transform 0.5s;
+}
