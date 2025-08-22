@@ -1,264 +1,185 @@
-/* pink #ffd1dc purple C3B1E1 + mrgin*/
+/* Kleuren #faf6ee en #2e1d0e & fonts Oswald en Quicksand*/
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Quicksand:wght@300..700&display=swap");
 
 body {
-	font-family: "Poppins", sans-serif;
 	margin: 0;
-	background-color: #de5d83;
+	background-color: #faf6ee;
+	color: #2e1d0e;
+	font-family: "Quicksand", sans-serif;
+	font-size: 17px;
+	line-height: 1.5;
 }
 
 .wrapper {
-	width: 100%;
+	max-width: 1200px;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(6, minmax(100px, auto));
-	position: relative;
+	padding: 50px;
 }
 
-#grid {
-	position: absolute;
-	display: none;
-	grid-template-columns: repeat(12, 1fr);
-	width: 100%;
-	height: 100%;
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
 }
 
-#grid p {
-	border: 1px solid #000;
-	margin: 0;
-	opacity: 0.2;
-}
-
-header {
-	grid-column: 1/13;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-}
-
-header img {
-	grid-column: 1/5;
-	align-self: center;
-	max-width: 50%;
-	padding-left: 30px;
+.header img {
+	width: 400px;
 	height: auto;
 }
 
-header nav {
-	grid-column: 6/13;
-	align-self: center;
-}
-
-header nav ul {
+.menu ul {
 	margin: 0;
 	padding: 0;
-	float: center;
 }
 
-header nav ul li {
-	display: inline;
-	padding-left: 50px;
-}
-
-header nav ul li a {
-	color: #fff;
+.menu ul a {
+	display: inline-block;
+	margin-left: 30px;
 	text-decoration: none;
+	color: #faf6ee;
+	background-color: #2e1d0e;
+	padding: 10px 25px;
+	border-radius: 10px;
+	font-family: 600;
+	transition: background-color 0.5s ease;
 }
 
-.sophiehatter-text {
-	grid-column: 1/7;
-	align-self: center;
-	padding: 100px;
-}
-
-.sophiehatter-image {
-	grid-column: 7/13;
-}
-
-.sophiehatter-image img {
-	width: 100%;
-	max-width: 60%;
-	height: auto;
-	border-radius: 50%;
-}
-
-h1 {
-	font-size: 54px;
-	line-height: 60px;
-	font-weight: 800;
-	color: #fff;
-	margin: 0;
-}
-
-h4 {
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: 600;
-	color: #000;
-}
-
-h3 {
-	line-height: 30px;
-	font-weight: 600;
-	color: #000;
+.menu ul a:hover {
+	background-color: #556b2f;
+	color: #faf6ee;
 }
 
 .button {
-	padding: 15px 30px;
-	background-color: #c3b1e1;
-	display: inline-block;
-	border-radius: 6px;
+	background-color: #2e1d0e;
+	color: #faf6ee;
+	padding: 10px 25px;
+	border-radius: 10px;
 	text-decoration: none;
-	color: #fff;
 	font-weight: 600;
+	transition: background-color 0.5s ease;
+	display: inline-block;
 }
 
 .button:hover {
-	background-color: #a999c4;
+	background-color: #556b2f;
+}
+
+.intro {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
 }
 
 .sophiehatter-text {
-	grid-column: 1/7;
-	align-self: center;
+	flex: 2;
+	padding-right: 50px;
+}
+
+.sophiehatter-text h1 {
+	font-family: "Abril Fatface", serif;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.sophiehatter-text p {
+	font-size: 18px;
+	margin-bottom: 50px;
 }
 
 .sophiehatter-image {
-	grid-column: 7/13;
-	align-self: center;
-}
-
-.title {
-	grid-column: 1/13;
+	flex: 1;
 	text-align: center;
 }
 
-h2 {
-	color: #fff;
+.sophiehatter-image img {
+	width: 350px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.sophiehatter-text h2 {
+	font-family: "Abril Fatface", serif;
 	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.button {
+	display: block;
+	margin: auto;
+	text-align: center;
+	width: fit-content;
+	margin-top: 50px;
+}
+
+.hobby {
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 .hobby-text {
-	grid-column: 2/8;
-	align-self: center;
+	flex: 2;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.hobby-text h2 {
+	font-family: "Abril Fatface", serif;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.hobby-text p {
+	font-size: 18px;
 }
 
 .hobby-image {
-	grid-column: 8/12;
-	align-self: center;
+	flex: 1;
 }
 
 .hobby-image img {
 	width: 100%;
-	max-width: 80%;
-	height: auto;
-	border-radius: 50%;
+	max-width: 300px;
+	border-radius: 15px;
 }
 
-p {
-	font-size: 20px;
-	line-height: 30px;
+.interesses {
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 .interesses-text {
-	grid-column: 6/12;
-	align-self: center;
+	flex: 2;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.interesses-text h2 {
+	font-family: "Abril Fatface", serif;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.interesses-text p {
+	font-size: 18px;
 }
 
 .interesses-image {
-	grid-column: 2/6;
-	align-self: center;
-	grid-row: 5/6;
+	flex: 1;
 }
 
 .interesses-image img {
 	width: 100%;
-	max-width: 80%;
-	height: auto;
-	border-radius: 50%;
-}
-
-.hamburger-menu {
-	position: absolute;
-	top: 40px;
-	right: 200px;
-}
-
-.menu-icon {
-	cursor: pointer;
-	display: inline-block;
-	width: 30px;
-	height: 25px;
-	position: relative;
-}
-
-.menu-icon span {
-	background: #fff;
-	display: block;
-	height: 4px;
-	width: 100%;
-	margin: 5px 0;
-	transition: 0.3s;
-}
-
-#menu-toggle {
-	display: none;
-}
-
-#menu-toggle:checked + .menu-icon span:nth-child(1) {
-	transform: rotate(45deg);
-	position: relative;
-	top: 8px;
-}
-
-#menu-toggle:checked + .menu-icon span:nth-child(2) {
-	opacity: 0;
-}
-
-#menu-toggle:checked + .menu-icon span:nth-child(3) {
-	transform: rotate(-45deg);
-	position: relative;
-	top: -8px;
-}
-
-.menu {
-	position: absolute;
-	top: 50px;
-	right: 0;
-	width: 100%;
-	display: none;
-	flex-direction: column;
-	align-items: center;
-	z-index: 1;
-}
-
-.menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
-.menu ul li {
-	text-align: center;
-}
-
-.menu ul li a {
-	display: block;
-	padding: 15px;
-	color: #fff;
-	text-decoration: none;
-	font-size: 18px;
-}
-
-#menu-toggle:checked ~ .menu {
-	display: flex;
-}
-
-.content {
-	padding: 20px;
-}
-
-section {
-	padding: 50px 0;
+	max-width: 300px;
+	border-radius: 15px;
 }
